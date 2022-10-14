@@ -21,19 +21,18 @@ Print the inverse of the array using np.linalg.inv
 
 
 ## PROGRAM:
-```python
-import numpy as np
-rows=int(input())
-columns=int(input())
-l1=[]
-for i in range(rows):
-    temp=[]
-    for j in range(columns):
-        t=int(input())
-        temp+=[t]
-    l1+=[temp]
-print(l1)
-print(np.linalg.inv(l1))
+```pythonimport numpy as np
+r,c=int(input()),int(input())
+l1,l2=[],[]
+for i in range(r):
+    for j in range(c):
+        l1.append(int(input()))
+    l2.append(l1)
+    l1=[]
+print(l2)
+array1 = np.array(l2)
+arrayinverse = np.linalg.inv(array1)
+print(arrayinverse)
 ```
 ## OUTPUT:
 ![output](./Screenshot%20from%202022-10-06%2014-06-46.png)
