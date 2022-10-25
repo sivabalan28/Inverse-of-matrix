@@ -21,7 +21,11 @@ Print the inverse of the array using np.linalg.inv
 
 
 ## PROGRAM:
-```pythonimport numpy as np
+```python
+#Program to find the inverse of matrix
+#Developed by: Sivabalan S
+#Register number: 22004401
+import numpy as np
 r,c=int(input()),int(input())
 l1,l2=[],[]
 for i in range(r):
